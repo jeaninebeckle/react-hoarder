@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   BrowserRouter,
   Redirect,
@@ -67,7 +67,8 @@ class App extends React.Component {
                 <PrivateRoute path="/stuff" component={Stuff} authed={authed}/>
                 <PrivateRoute path="/edit/:stuffId" component={Edit} authed={authed}/>
                 <PrivateRoute path="/stuff/:stuffId" component={SingleStuff} authed={authed}/>
-                <PublicRoute
+                <PublicRoute path="/auth" component={Auth} authed={authed} />
+                <Redirect from="*" to="/home"/>
               </Switch>
             </div>
           </React.Fragment>

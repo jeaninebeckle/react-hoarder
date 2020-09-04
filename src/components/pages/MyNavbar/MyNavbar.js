@@ -11,7 +11,6 @@ import {
   NavLink,
 } from 'reactstrap';
 import firebase from 'firebase/app';
-import Auth from '../Auth/Auth';
 import 'firebase/auth';
 
 class MyNavbar extends React.Component {

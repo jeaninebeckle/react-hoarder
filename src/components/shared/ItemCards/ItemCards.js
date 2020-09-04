@@ -15,8 +15,8 @@ class ItemCards extends React.Component {
         <img class="card-img-top" src={item.itemImage} alt="Card cap" />
           <div class="card-body">
           <h5 class="card-title">{item.itemName}</h5>
-          <Link to={`/edit/${item.id}`} className="btn btn-light m-3">Edit</Link>
-          <Link to={`/stuff/${item.id}`} className="btn btn-light m-3">View</Link>
+          <Link to={`/edit/${item.id}`} className="btn btn-secondary m-3">Edit</Link>
+          <Link to={`/singlestuff/${item.id}`} className="btn btn-secondary m-3">View</Link>
         </div>
       </div>
     );

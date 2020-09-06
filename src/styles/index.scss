@@ -1,8 +1,18 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Viga&display=swap');
+
 
 @import 'variables';
 
 body {
   background-color: $favColor;
+}
+
+h1, .ml-auto, .hoarder {
+  font-family: 'Viga', sans-serif;
+}
+
+h5 {
+  font-family: 'Gloria Hallelujah', cursive;
 }

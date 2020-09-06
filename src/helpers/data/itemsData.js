@@ -23,4 +23,11 @@ const getSingleItem = (itemId) => axios.get(`${baseUrl}/items/${itemId}.json`);
 
 const createItem = (newItem) => axios.post(`${baseUrl}/items.json`, newItem);
 
-export default { getItemsByUid, getSingleItem, createItem };
+const deleteItem = (itemId) => axios.delete(`${baseUrl}/items/${itemId}.json`);
+
+export default {
+  getItemsByUid,
+  getSingleItem,
+  createItem,
+  deleteItem,
+};
